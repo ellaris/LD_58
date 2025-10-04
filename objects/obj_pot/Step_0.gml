@@ -14,7 +14,13 @@ else
 	instance_destroy();
 }
 	
-if(instance_position(x,y,obj_shield))
+if(instance_place(x,y,obj_shield))
+{
+	create_pot_parts();
+	instance_destroy();
+}
+
+if(instance_place(x,y,obj_tax_collector))
 {
 	create_pot_parts();
 	instance_destroy();

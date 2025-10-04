@@ -4,3 +4,4 @@
 //road_layer = layer_get_id("Assets_1");
 //layer_hspeed(road_layer,-1);
 time = 0;
+child_cd = 0;

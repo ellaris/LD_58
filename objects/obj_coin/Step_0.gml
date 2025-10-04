@@ -64,10 +64,10 @@ if(_o)//place_meeting(x,y,obj_coin))
 	hspeed = -hspeed * 3/4;
 }
 
-if(instance_position(x,y,obj_shield))
+if(instance_place(x,y,obj_shield))
 {
 	vspeed = -vspeed -2;
 	hspeed += (-1-irandom(3))*0.2;
-	while(instance_position(x,y,obj_shield))
+	while(instance_place(x,y,obj_shield))
 		y -= 1;
 }

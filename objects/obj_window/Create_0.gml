@@ -8,7 +8,7 @@ drop = irandom(2)>0;
 ledge_x = 8-irandom(16);
 ledge_y = 16+6;
 
-standard_drop = round(obj_tax_collector.x + (obj_tax_collector.y - y) * (65/96)) // 385
+standard_drop = round(obj_tax_collector.x + (obj_tax_collector.y - y) * (40/96)) // 385 x/y 65/96
 plant_show_range = 32;
 
 if(plant)

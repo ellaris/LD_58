@@ -2,6 +2,7 @@
 // W tym edytorze możesz zapisać swój kod
 
 
-target_dir = 0;
-range = 12;
-rotate_speed = 5;
+tomato = irandom(1);
+can_throw = true;
+if(tomato)
+	image_blend = c_red;
