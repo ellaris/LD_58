@@ -1,0 +1,11 @@
+Tax Collector game, medieval street, 
+the houses in the background move to the left, along with any objects
+The tax collector and his cart will appearto move to the right
+The Player has to click on doors to knock and get people to throw coins at the tax collector
+Some unhappy people will try to throw pots at the tax colector from windows
+Some children might come from the right side of the screen to throw tomatoes at him which
+Some thieves will appear from behind and will try to rob him
+All those adversities will need to be blocked with his trusty shield
+
+(potential bonus for aiming the broken pots into the bin)
+("stickers" for decorating the cart)
