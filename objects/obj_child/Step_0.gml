@@ -1,6 +1,11 @@
 /// @description Wstaw opis w tym miejscu
 // W tym edytorze możesz zapisać swój kod
 
+if(obj_control.debug and tomato)
+	image_blend = c_red;
+else
+	image_blend = c_white;
+
 if(can_throw)
 	x -= 1;
 else

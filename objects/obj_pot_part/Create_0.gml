@@ -1,6 +1,8 @@
 /// @description Wstaw opis w tym miejscu
 // W tym edytorze możesz zapisać swój kod
 
+event_inherited();
+
 image_speed = 0;
 rotation = 0
 vspeed = -2.5+irandom(15)*0.1;

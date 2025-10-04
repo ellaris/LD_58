@@ -4,6 +4,17 @@
 
 event_inherited();
 
+if(obj_control.debug)
+{
+	if(plant)
+		image_blend = c_green;
+	
+	if(plant and drop)
+		image_blend = c_red;
+}
+else
+	image_blend = c_white;
+
 //if(x == standard_drop)
 //	show_debug_message(string("px{0} py{1} wx{2} wy{3}",obj_tax_collector.x,obj_tax_collector.y,x,y))
 

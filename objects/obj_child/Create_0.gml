@@ -4,5 +4,3 @@
 
 tomato = irandom(1);
 can_throw = true;
-if(tomato)
-	image_blend = c_red;

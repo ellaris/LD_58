@@ -2,7 +2,8 @@
 // W tym edytorze możesz zapisać swój kod
 
 var _t = obj_tax_collector;
-target_dir = point_direction(_t.x,_t.y,mouse_x,mouse_y);
+if(obj_control.moving)
+	target_dir = point_direction(_t.x,_t.y,mouse_x,mouse_y);
 
 direction += clamp(angle_difference(target_dir,direction),-rotate_speed,rotate_speed);
 image_angle = direction;
