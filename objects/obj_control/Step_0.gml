@@ -1,7 +1,7 @@
 /// @description Wstaw opis w tym miejscu
 // W tym edytorze możesz zapisać swój kod
 
-if(game_start)
+if(game_start and not game_over)
 	game_time += 1;
 
 var _gs = game_get_speed(gamespeed_fps);
@@ -48,4 +48,7 @@ if(stop_moving_cd == 0 and not moving)
 	toogle_moving();
 	
 if(keyboard_check_pressed(vk_f12))
+{
 	debug = not debug;
+	toogle_debug_blend();
+}

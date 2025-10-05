@@ -3,6 +3,6 @@
 
 event_inherited();
 
-vspeed = -2.4;
-hspeed = (irandom(16)-8)*0.1;
+vspeed = -2.5;
+hspeed = (irandom(4)-2)*0.4;
 inside = false;

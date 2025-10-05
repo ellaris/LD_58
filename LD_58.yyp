@@ -46,6 +46,7 @@
     {"id":{"name":"obj_pot_part","path":"objects/obj_pot_part/obj_pot_part.yy",},},
     {"id":{"name":"spr_pot","path":"sprites/spr_pot/spr_pot.yy",},},
     {"id":{"name":"spr_tomato","path":"sprites/spr_tomato/spr_tomato.yy",},},
+    {"id":{"name":"spr_back_clouds","path":"sprites/spr_back_clouds/spr_back_clouds.yy",},},
     {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},},
     {"id":{"name":"spr_shield","path":"sprites/spr_shield/spr_shield.yy",},},
     {"id":{"name":"spr_info","path":"sprites/spr_info/spr_info.yy",},},

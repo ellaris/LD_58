@@ -29,6 +29,7 @@
     {"name":"obj_pot_part","order":10,"path":"objects/obj_pot_part/obj_pot_part.yy",},
     {"name":"spr_pot","order":7,"path":"sprites/spr_pot/spr_pot.yy",},
     {"name":"spr_tomato","order":11,"path":"sprites/spr_tomato/spr_tomato.yy",},
+    {"name":"spr_back_clouds","order":19,"path":"sprites/spr_back_clouds/spr_back_clouds.yy",},
     {"name":"obj_coin","order":7,"path":"objects/obj_coin/obj_coin.yy",},
     {"name":"spr_shield","order":8,"path":"sprites/spr_shield/spr_shield.yy",},
     {"name":"spr_info","order":16,"path":"sprites/spr_info/spr_info.yy",},

@@ -51,3 +51,37 @@ toogle_moving = function(){
 
 toogle_moving();
 //layer_hspeed(road_layer, 0);
+
+toogle_debug_blend = function(){
+	with obj_door
+		if(obj_control.debug and  thief)
+			image_blend = c_red;
+		else
+			image_blend = c_white;
+			
+	with obj_window
+		if(obj_control.debug)
+		{
+			if(plant)
+				image_blend = c_green;
+	
+			if(plant and drop)
+				image_blend = c_red;
+		}
+		else
+			image_blend = c_white;
+			
+	with obj_child
+		if(obj_control.debug and tomato)
+			image_blend = c_red;
+		else
+			image_blend = c_white;
+			
+	with obj_sewer_hole
+		if(obj_control.debug and image_index == 0)
+			image_blend = c_red;
+		else
+			image_blend = c_white;
+}
+
+instance_create_layer(720-160,144,layer,obj_house);

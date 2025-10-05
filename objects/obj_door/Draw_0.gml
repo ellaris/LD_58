@@ -12,7 +12,8 @@ if(array_length(a_coins) == 0)
 if(obj_control.debug)
 {
 	var _c = 0;
-	if(array_length(a_coins) > 1)
-		_c = array_reduce(a_coins,function(_p,_v,_i){return _v + _p})
+	//if(array_length(a_coins) > 1)
+	//	_c = array_reduce(a_coins,function(_p,_v,_i){return _v + _p})
+	_c = coins;
 	draw_text(x,bbox_top,string(_c));
 }

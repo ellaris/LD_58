@@ -23,7 +23,7 @@ door_random = function(_door){
 	_door.a_offsets = _ao;
 	
 	_door.thief = irandom(3) == 0;
-	_door.coins = irandom(6);
+	_door.coins = _c;
 	
 }
 
@@ -52,7 +52,7 @@ window_random = function(_window){
 
 
 
-var _door = instance_create_depth(x,y+32+16+8,depth-1,obj_door);
+var _door = instance_create_depth(x,y+32+16+6,depth-1,obj_door);
 //_door.thief = irandom(3) == 0;
 //_door.coins = irandom(6);
 door_random(_door);
