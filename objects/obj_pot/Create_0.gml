@@ -13,4 +13,5 @@ create_pot_parts = function()
 		var _part = instance_create_depth(x,y,depth-1,obj_pot_part);
 		_part.image_index = i;
 	}
+	audio_play_sound(snd_pot_break,3,false);
 }

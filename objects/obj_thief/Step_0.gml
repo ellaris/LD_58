@@ -11,6 +11,7 @@ if(image_index >= (image_number-1) and image_speed != -1)
 	
 if((image_index >= (image_number-1)) and not grabbed)
 {
+	audio_play_sound(snd_thief_steal,3,false);
 	grabbed = true;
 	if(obj_shield.x < obj_tax_collector.x-6)
 		image_index -= 1;

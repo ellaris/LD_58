@@ -20,7 +20,11 @@ else if (y >= 255)
 	vspeed = -vspeed * 2/3;
 	hspeed = hspeed * 2/3;
 	if(vspeed > 0.05)
+	{
 		hspeed += (10-irandom(20))*0.2;
+		if(not audio_is_playing(audio_play))
+			audio_play = audio_play_sound(snd_coin_3,1,false);
+	}
 }
 
 if(inside and y >= obj_cart.bbox_bottom-9 and abs(vspeed) <= 0.1)
@@ -61,6 +65,9 @@ if(_o)//place_meeting(x,y,obj_coin))
 	
 		_o.vspeed = -_o.vspeed * _vspd_ratio -(sign(_o.vspeed) *abs(vspeed) * _vspd_ratio);
 		_o.hspeed = -_o.hspeed * _hspd_ratio -(sign(_o.vspeed) *abs(vspeed) *_hspd_ratio);
+		
+		//if(not audio_is_playing(audio_play))
+		//	audio_play = audio_play_sound(snd_coin_2,1,false);
 	}
 }
 
@@ -74,6 +81,8 @@ if(x < obj_tax_collector.x+32 and y > 130 )//and (abs(vspeed) + abs(hspeed) > 0.
 		//instance_destroy();
 		if(x > obj_cart.bbox_right and x <= obj_cart.bbox_right+6)
 		{
+			//if(not audio_is_playing(audio_play))
+			//	audio_play = audio_play_sound(snd_coin_2,1,false);
 			hspeed = -hspeed+2.2;
 			x = obj_cart.bbox_right+7;
 			inside = false;
@@ -95,7 +104,11 @@ if(x < obj_tax_collector.x+32 and y > 130 )//and (abs(vspeed) + abs(hspeed) > 0.
 			y = obj_cart.bbox_bottom-9;
 			vspeed = -vspeed * 2/3;
 			if(vspeed > 0.1)
+			{
 				hspeed += (10-irandom(20))*0.1;
+				//if(not audio_is_playing(audio_play))
+				//	audio_play = audio_play_sound(snd_coin_2,1,false);
+			}
 		}
 		if(y > obj_cart.bbox_bottom and y <= obj_cart.bbox_bottom+8)
 		{
@@ -106,12 +119,16 @@ if(x < obj_tax_collector.x+32 and y > 130 )//and (abs(vspeed) + abs(hspeed) > 0.
 				inside = false;
 				y = obj_cart.bbox_bottom+9;
 				vspeed = -vspeed * 1/3;
+				//if(not audio_is_playing(audio_play))
+				//	audio_play = audio_play_sound(snd_coin_2,1,false);
 			}
 		}
 	}
 	else
 	if(instance_place(x,y,obj_shield))
 	{
+		if(not audio_is_playing(audio_play))
+			audio_play = audio_play_sound(snd_coin_2,1,false);
 		vspeed = -vspeed *1/3 -2.3;
 		hspeed = hspeed*2/3;
 		hspeed += -0.8;//(-1-irandom(3))*0.2;

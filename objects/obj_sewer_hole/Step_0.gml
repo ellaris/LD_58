@@ -7,10 +7,12 @@ if(instance_place(x,y,obj_shield) and not closed)
 {
 	image_index = 1;
 	closed = true;
+	audio_play_sound(snd_manhole,3,false);
 }
 
 if(instance_place(x,y,obj_cart) and not closed)
 {
+	audio_play_sound(snd_manhole,3,false);
 	image_index = 1;
 	closed = true;
 	with obj_coin

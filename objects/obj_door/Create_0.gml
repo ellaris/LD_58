@@ -10,7 +10,7 @@ a_offsets = []; // -5 5
 
 
 cd = 0;
-max_cd = 16;
+max_cd = 14;
 image_speed = 0;
 
 thief = false;//irandom(3) == 0;

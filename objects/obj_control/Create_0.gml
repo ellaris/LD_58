@@ -8,15 +8,18 @@ child_cd = 0;
 sewer_cd = 0;
 game_time = 0;
 
+house_cd = 0;
+
 game_start = false;
 game_over = false;
 
 debug = false;
 
 moving = true;
+wagon_moving = audio_play_sound(snd_wagom_moving,4,true);
 
 stop_moving_cd = 0;
-stop_moving_cd_max = game_get_speed(gamespeed_fps)*2;
+stop_moving_cd_max = game_get_speed(gamespeed_fps)*1.5;
 
 pot_hit = function(){
 	stop_moving_cd = stop_moving_cd_max;
@@ -35,6 +38,8 @@ toogle_moving = function(){
 			moving = other.moving;
 		obj_cart.image_speed = 0;
 		obj_tax_collector.image_speed = 0;
+		
+		audio_pause_sound(wagon_moving);
 	}
 	else
 	{
@@ -45,6 +50,8 @@ toogle_moving = function(){
 			moving = other.moving;
 		obj_cart.image_speed = 1;
 		obj_tax_collector.image_speed = 1;
+		
+		audio_resume_sound(wagon_moving);
 	}
 
 }
@@ -85,3 +92,5 @@ toogle_debug_blend = function(){
 }
 
 instance_create_layer(720-160,144,layer,obj_house);
+
+audio_play_sound(snd_theme,1,true);
