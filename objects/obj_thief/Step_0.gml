@@ -25,6 +25,7 @@ if((image_index >= (image_number-1)) and not grabbed)
 				image_blend = c_red;
 				image_index -= 1;
 				instance_destroy(_c);
+				obj_control.thief_steals += 1;
 				break;
 			}
 		}

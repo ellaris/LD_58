@@ -9,6 +9,7 @@ else
 if(x < 444 and irandom(10) == 0 and can_throw)
 {
 	can_throw = false;
+	image_xscale = -1;
 	
 	var _inst;
 	if(tomato)

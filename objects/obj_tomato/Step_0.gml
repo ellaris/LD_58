@@ -18,11 +18,19 @@ if(instance_place(x,y,obj_tax_collector))
 {
 	instance_create_depth(x,y,depth,obj_tomato_goop);
 	instance_create_depth(x,y,-10,obj_screen_goop);
+	obj_control.tomato_hits += 1;
 	audio_play_sound(snd_tomato_impact,3,false);
 	instance_destroy();
 }
 
 if(instance_place(x,y,obj_shield))
+{
+	instance_create_depth(x,y,depth,obj_tomato_goop);
+	audio_play_sound(snd_tomato_impact,3,false);
+	instance_destroy();
+}
+
+if(instance_position(x,y,obj_title))
 {
 	instance_create_depth(x,y,depth,obj_tomato_goop);
 	audio_play_sound(snd_tomato_impact,3,false);

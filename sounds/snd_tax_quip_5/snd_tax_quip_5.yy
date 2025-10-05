@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "snd_tax_quip_5.mp3",
   "type": 0,
-  "volume": 0.3,
+  "volume": 0.5,
 }

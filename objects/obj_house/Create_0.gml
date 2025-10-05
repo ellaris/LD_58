@@ -60,9 +60,9 @@ var _door = instance_create_depth(x,y+32+16+6,depth-1,obj_door);
 //_door.coins = irandom(6);
 door_random(_door);
 
-var _window = instance_create_depth(x-32,y-16,depth-1,obj_window);
+var _window = instance_create_depth(x-32-8,y-16+16,depth-1,obj_window);
 window_random(_window);
-_window = instance_create_depth(x+32,y-16,depth-1,obj_window);
+_window = instance_create_depth(x+32+8,y-16+16,depth-1,obj_window);
 window_random(_window);
 
 if(irandom(2) == 0)
