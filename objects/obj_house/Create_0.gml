@@ -25,6 +25,8 @@ door_random = function(_door){
 	_door.thief = irandom(3) == 0;
 	_door.coins = _c;
 	
+	_door.thief = false;
+	
 }
 
 door_preset_1 = function(_door){
@@ -45,6 +47,7 @@ door_preset_3 = function(_door){
 window_random = function(_window){
 	_window.plant = irandom(1)==0;
 	_window.drop = irandom(2)>0;
+	_window.drop = false;
 
 	_window.ledge_x = 8-irandom(16);
 }

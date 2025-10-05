@@ -29,11 +29,11 @@ if (moving and time mod 160 == 0)
 	else
 		time -= 1;
 		
-	if(irandom(4) == 0 and child_cd  <= 0)
-	{
-		instance_create_depth(720,230,depth-2,obj_child);
-		child_cd = 30;
-	}
+	//if(irandom(4) == 0 and child_cd  <= 0)
+	//{
+	//	instance_create_depth(720,230,depth-2,obj_child);
+	//	child_cd = 30;
+	//}
 	
 	if(irandom(7) == 0 and sewer_cd  <= 0)
 	{
